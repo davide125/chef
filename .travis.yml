@@ -18,7 +18,7 @@ branches:
 # do not run expensive spec tests on PRs, only on branches
 script: "
 echo '--color\n-fp' > .rspec;
-sudo -E bundle exec rake spec;
+sudo -E $(which bundle) exec rake spec;
 "
 
 env:
